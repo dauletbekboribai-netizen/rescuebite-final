@@ -1,0 +1,1 @@
+import API from '../api/client';import {useEffect,useState} from 'react';export default function(){const[r,s]=useState([]);useEffect(()=>{API.get('/restaurants').then(x=>s(x.data.items||[]))},[]);return<div><h1>Restaurants</h1>{r.map(v=><div key={v.id}>{v.name}</div>)}</div>}

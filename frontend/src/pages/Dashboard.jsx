@@ -1,0 +1,1 @@
+export default ()=> <div><h1>Dashboard</h1><a href='/restaurants'>Restaurants</a></div>

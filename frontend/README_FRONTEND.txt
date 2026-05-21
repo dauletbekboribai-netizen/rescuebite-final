@@ -1,0 +1,1 @@
+Copy frontend folder to project root. Add frontend service to docker-compose.
