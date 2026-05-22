@@ -49,3 +49,4 @@ def send_email_task(self, job_id: int, to_email: str, subject: str, html: str):
                 session.commit()
 
             raise self.retry(exc=exc, countdown=60)
+            
